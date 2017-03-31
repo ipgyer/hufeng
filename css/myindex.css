@@ -1,0 +1,144 @@
+/*第一屏*/
+.section {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.rahmen {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: burlywood;
+    /*margin: 150px auto 0;*/
+    margin: auto;
+    overflow: hidden;
+}
+
+.intro {
+    height: 50px;
+    width: 100px;
+    background-color: #c8edcc;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*弹窗*/
+.popup {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*left: 50%;*/
+    /*top:50%;*/
+    /*transform: translate(-50%,-50%);*/
+    width: 70%;
+    height: 70%;
+
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    z-index: 10;
+
+}
+
+.popup p {
+    color: blue;
+    font-size: 30px;
+}
+
+/*第二屏*/
+.skills {
+    margin: auto;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+}
+
+.skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*第三屏*/
+
+/*第四屏*/
+.orientation {
+    position: relative;
+}
+
+.orientation h3 {
+    margin-bottom: 10%;
+}
+
+/*qq*/
+
+.scan {
+    position: absolute;
+    margin: auto;
+    top: 250px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.scan img {
+    height: 100px;
+    width: 100px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    /*text-align: center;*/
+}

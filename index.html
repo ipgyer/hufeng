@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 申明IE浏览器需要用最新的渲染引擎来渲染当前的页面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <meta name="description" content="胡锋的个人网站,全权管理和解释权在胡锋本人.">
+    <meta name="keywords" content="胡锋的个人网站  胡锋 前端开发 H5 HTML5">
+    <meta name="author" content="胡锋">
+    <title>个人网站</title>
+    <link rel="shortcut icon" href="./favicon.ico/logo.ico"/>
+
+    <link rel="stylesheet" href="./lib/roll/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style type="text/css" media="screen">
+        #ceshi{
+            position:relative;
+        }
+        #container{
+          position:absolute;
+          left:0;
+          top:0;
+          z-index:2;
+          opacity:0.5;
+        }
+    </style>
+</head>
+
+<body>
+<div id="ceshi">
+<div id="dowebok">
+    <!--第一屏-->
+    <div class="section">
+        <!-- 照框 b-->
+        <div class="rahmen">
+            <img src="./images/200.png" alt="我"/>
+        </div>
+        <!-- 照框 e-->
+        <!-- 介绍 b -->
+        <div>
+            <input class="intro" type="button" value="简介">
+        </div>
+        <!-- 介绍 b -->
+        <div class="popup">
+            <p>阿比饭店hi安徽省地方Oahu</p>
+            <!--demodemo demo mdeo wapejfw-->
+        </div>
+    </div>
+    <!--第二屏-->
+    <div class="section">
+        <div class="skills">
+            <div class="skillbar clearfix " data-percent="90%">
+                <div class="skillbar-title" style="background: #d35400;"><span>HTML/CSS</span></div>
+                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                <div class="skill-bar-percent">90%</div>
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #d35400;"><span>Js/jQuery</span></div>
+                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #2980b9;"><span>H5</span></div>
+                <div class="skillbar-bar" style="background: #3498db;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #2c3e50;"><span>C3</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">50%</div>
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #2c3e50;"><span>Ajax</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div> <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #2c3e50;"><span>响应式/移动端</span></div>
+                <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div> <!-- End Skill Bar -->
+        </div>
+    </div>
+    <!--第三屏-->
+    <div class="section">
+        <h3>展示</h3>
+    </div>
+    <!--第四屏-->
+    <div class="section orientation">
+        <h3>联系方式</h3>
+        <div class="scan"><img src="./images/wx.jpg" alt="微信二维码"></div>
+        <a class="contactWay" id="weixin"><img src="./images/weixin.png" alt="微信"></a>
+
+
+
+        <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Hy4tKiwrKyYoLytfbm4xfHBy" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a>
+        <div class="footer">
+            <p>@2017-2018  备案号 : 湘ICP备17002914号</p>
+        </div>
+    </div>
+</div>
+<div id="container"></div></div>
+<script src="./lib/roll/js/jquery-1.8.3.min.js"></script>
+<script src="./lib/roll/js/jquery.fullPage.min.js"></script>
+<script src="./lib/progress/js/index.js"></script>
+<script src="./js/index.js"></script>
+<style>
+    .section {
+        text-align: center;
+        font: 50px "Microsoft Yahei";
+        color: #fff;
+    }
+</style>
+
+<script>
+    $(function () {
+        $("#dowebok").fullpage({
+            'verticalCentered': true,//内容是否垂直居中
+            'css3': true,//	是否使用 CSS3 transforms 滚动
+            'sectionsColor': ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],//各个页面的主颜色
+            anchors: false,//是否定义锚链接
+            'navigation': true,//是否显示项目导航
+            'navigationPosition': 'right',//	项目导航的位置，可选 left 或 right
+            'navigationTooltips': ['简介', '技术', '作品', '联系'],//项目导航的tip值
+        });
+    })
+</script>
+
+
+
+<script src="https://rawgithub.com/soulwire/sketch.js/v1.0/js/sketch.min.js"></script>
+<script>
+function Particle( x, y, radius ) {
+    this.init( x, y, radius );
+}
+
+Particle.prototype = {
+
+    init: function( x, y, radius ) {
+
+        this.alive = true;
+
+        this.radius = radius || 10;
+        this.wander = 0.15;
+        this.theta = random( TWO_PI );
+        this.drag = 0.92;
+        this.color = '#fff';
+
+        this.x = x || 0.0;
+        this.y = y || 0.0;
+
+        this.vx = 0.0;
+        this.vy = 0.0;
+    },
+
+    move: function() {
+
+        this.x += this.vx;
+        this.y += this.vy;
+
+        this.vx *= this.drag;
+        this.vy *= this.drag;
+
+        this.theta += random( -0.5, 0.5 ) * this.wander;
+        this.vx += sin( this.theta ) * 0.1;
+        this.vy += cos( this.theta ) * 0.1;
+
+        this.radius *= 0.96;
+        this.alive = this.radius > 0.5;
+    },
+
+    draw: function( ctx ) {
+
+        ctx.beginPath();
+        ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+};
+
+// ----------------------------------------
+// Example
+// ----------------------------------------
+
+var MAX_PARTICLES = 280;
+var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+
+var particles = [];
+var pool = [];
+
+var demo = Sketch.create({
+    container: document.getElementById( 'container' )
+});
+
+demo.setup = function() {
+
+    // Set off some initial particles.
+    var i, x, y;
+
+    for ( i = 0; i < 20; i++ ) {
+        x = ( demo.width * 0.5 ) + random( -100, 100 );
+        y = ( demo.height * 0.5 ) + random( -100, 100 );
+        demo.spawn( x, y );
+    }
+};
+
+demo.spawn = function( x, y ) {
+
+    if ( particles.length >= MAX_PARTICLES )
+        pool.push( particles.shift() );
+
+    particle = pool.length ? pool.pop() : new Particle();
+    particle.init( x, y, random( 5, 40 ) );
+
+    particle.wander = random( 0.5, 2.0 );
+    particle.color = random( COLOURS );
+    particle.drag = random( 0.9, 0.99 );
+
+    theta = random( TWO_PI );
+    force = random( 2, 8 );
+
+    particle.vx = sin( theta ) * force;
+    particle.vy = cos( theta ) * force;
+
+    particles.push( particle );
+}
+
+demo.update = function() {
+
+    var i, particle;
+
+    for ( i = particles.length - 1; i >= 0; i-- ) {
+
+        particle = particles[i];
+
+        if ( particle.alive ) particle.move();
+        else pool.push( particles.splice( i, 1 )[0] );
+    }
+};
+
+demo.draw = function() {
+
+    demo.globalCompositeOperation  = 'lighter';
+
+    for ( var i = particles.length - 1; i >= 0; i-- ) {
+        particles[i].draw( demo );
+    }
+};
+
+demo.mousemove = function() {
+
+    var particle, theta, force, touch, max, i, j, n;
+
+    for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+        touch = demo.touches[i], max = random( 1, 4 );
+        for ( j = 0; j < max; j++ ) demo.spawn( touch.x, touch.y );
+    }
+};
+</script>
+</body>
+</html>
